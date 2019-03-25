@@ -15,7 +15,7 @@ func TestS(t *testing.T) {
 
 	}
 	//逆序栈
-	ReverseWrapper(s)
+	s = ReverseWrapper(s)
 	for range numbers {
 		fmt.Println(s.Pop())
 	}

@@ -5,9 +5,15 @@ import (
 )
 
 //ReverseWrapper Wrapper
-func ReverseWrapper(s *minstatck.Stack) {
-	a := Reverse(s)
-	s.Push(a)
+func ReverseWrapper(s *minstatck.Stack) (b *minstatck.Stack) {
+	b = &minstatck.Stack{}
+	for {
+		a := Reverse(s)
+		b.Push(a)
+		if s.Len() == 0 {
+			return
+		}
+	}
 }
 
 //Reverse  逆序栈
