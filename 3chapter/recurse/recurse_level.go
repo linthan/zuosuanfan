@@ -34,7 +34,8 @@ func serialByLevel(head *Node) string {
 	return res
 }
 
-func reconByLevelString(levelStr string) *Node {
+//ReconByLevelString 创建二叉树
+func ReconByLevelString(levelStr string) *Node {
 	values := strings.Split(levelStr, "!")
 	index := 0
 	head := generateNodeByString(values[index])
