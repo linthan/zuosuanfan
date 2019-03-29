@@ -1,7 +1,8 @@
 # github.com/emirpasic/gods v1.12.0
+github.com/emirpasic/gods/lists/singlylinkedlist
 github.com/emirpasic/gods/stacks/arraystack
 github.com/emirpasic/gods/containers
+github.com/emirpasic/gods/lists
+github.com/emirpasic/gods/utils
 github.com/emirpasic/gods/lists/arraylist
 github.com/emirpasic/gods/stacks
-github.com/emirpasic/gods/utils
-github.com/emirpasic/gods/lists
