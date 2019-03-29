@@ -40,3 +40,36 @@ func lcst1(arr1, arr2 string) string {
 	}
 	return arr1[end-max+1 : end+1]
 }
+
+//lcst2 获取最长公共子串
+func lcst2(arr1, arr2 string) string {
+	row := 0
+	col := len(arr2) - 1
+	max := 0
+	end := 0
+	for row < len(arr1) {
+		i := row
+		j := col
+		leng := 0
+		for i < len(arr1) && j < len(arr2) {
+			if arr1[i] == arr2[j] {
+				leng++
+			} else {
+				leng = 0
+			}
+
+			if leng > max {
+				max = leng
+				end = i
+			}
+			i++
+			j++
+		}
+		if col > 0 {
+			col--
+		} else {
+			row++
+		}
+	}
+	return arr1[end-max+1 : end+1]
+}

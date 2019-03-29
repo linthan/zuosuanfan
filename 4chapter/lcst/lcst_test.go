@@ -8,6 +8,6 @@ import (
 func TestLCST(t *testing.T) {
 	arr1 := "1AB2345CD"
 	arr2 := "12345EF"
-	a := lcst1(arr1, arr2)
+	a := lcst2(arr1, arr2)
 	fmt.Println(a)
 }
