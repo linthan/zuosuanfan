@@ -6,7 +6,7 @@ import (
 )
 
 func TestKmp(t *testing.T) {
-	a := genNext("abcabct")
+	a := genNext("abcabc")
 	fmt.Println(a)
 	fmt.Println("-----------", StrContain("aaasdfasdfabcabctasdfasdfa", "abcabct"))
 }
